@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect=0.0.0.0 src/index.js",
+    "init": "npx tsc --init",
+    "compile": "tsc && node js/index.js",
+    "dev": "nodemon -e ts  --exec \"npm run compile\""
+  },
+  "dependencies": {
+    "preact": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
